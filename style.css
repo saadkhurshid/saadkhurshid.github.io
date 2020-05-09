@@ -11,7 +11,7 @@
 	}
 
 body {
-	background-image: url('img/grid_8px.png');
+	background-image: url('img/grid_36px.png');
 	font-family: "Helvetica Neue", sans-serif;
 	width: 50%;
 	}
@@ -40,7 +40,7 @@ h3 {
 	line-height: 45px;
 	margin-bottom: 18px;
 	font-weight: bold;
-	letter-spacing: -0.0625em;
+	letter-spacing: -0.0416em;
 	}
 
 h4 {
@@ -49,7 +49,7 @@ h4 {
 	line-height: 36px;
 	margin-bottom: 18px;
 	font-weight: bold;
-	letter-spacing: -0.0625em;
+	letter-spacing: -0.0416em;
 	}
 
 h5 {
@@ -58,7 +58,7 @@ h5 {
 	line-height: 27px;
 	margin-bottom: 18px;
 	font-weight: bold;
-	letter-spacing: -0.0625em;
+	letter-spacing: -0.0312em;
 	}
 
 h6 {
@@ -67,7 +67,7 @@ h6 {
 	line-height: 18px;
 	margin-bottom: 18px;
 	font-weight: bold;
-	letter-spacing: -0.0625em;
+	letter-spacing: -0.0312em;
 	}
 
 p {
