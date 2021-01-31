@@ -1,16 +1,44 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
+  font-family: 'DM Mono', monospace;
+  font-weight: 300;
+  margin: 1em;
+  max-width: 500px;
 }
 
-img {
-  width: 480px;
-  height: auto;
-  display: block;
-  float: left;
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: 500;
+}
+
+figcaption {
+  font-size: 12px;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+p {
+  text-indent: 2em;
+}
+
+ol {
+  list-style: decimal;
+  list-style-position: inside;
+}
+
+.media {
+    position: relative;
+}
+
+.media img {
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
 }
