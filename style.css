@@ -5,7 +5,7 @@
 
   --color-text: var(--gray);
   --color-bg: var(--gray);
-  --color-table: var(--black);
+  --color-table: var(--white);
 
   --font-size: 24px;
   --font: "Helvetica", san-serif;
@@ -136,10 +136,10 @@ thead {
 .material-icons {
   font-size: var(--icon) !important;
   display: inline-flex;
-  vertical-align: baseline;
+  vertical-align: middle !important;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1081px) {
   .grid {
     display: block;
   }
@@ -147,9 +147,8 @@ thead {
   .material-icons {
     font-size: var(--icon) !important;
     display: inline-flex;
-    vertical-align: bottom;
+    vertical-align: middle !important;
   }
-
 
   td, th {
     display: inline;
