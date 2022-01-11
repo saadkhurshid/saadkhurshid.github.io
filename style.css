@@ -134,7 +134,7 @@ thead {
 .material-icons {
   font-size: var(--icon) !important;
   display: inline-flex;
-  vertical-align: bottom;
+  vertical-align: baseline;
 }
 
 @media screen and (max-width: 1200px) {
