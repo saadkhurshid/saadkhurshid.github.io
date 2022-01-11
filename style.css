@@ -138,7 +138,7 @@ thead {
 .material-icons {
   font-size: var(--icon) !important;
   display: inline-flex;
-  vertical-align: text-bottom !important;
+  vertical-align: bottom !important;
   align-items: center;
 }
 
