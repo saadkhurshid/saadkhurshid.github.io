@@ -5,12 +5,13 @@
 
   --color-text: var(--gray);
   --color-bg: var(--gray);
-  --color-table: var(--white);
+  --color-table: var(--black);
 
   --font-size: 24px;
   --font: "Helvetica", san-serif;
   --text-align: left;
   --text-case: lowercase;
+  --leading: 1;
   --para-align: justify;
   --para-indent: 3em;
 
@@ -42,6 +43,7 @@ body {
   color: var(--color-text);
   font-size: var(--font-size);
   font-family: var(--font);
+  line-height: var(--leading);
   text-transform: var(--text-case);
   margin: var(--margin-body);
 }
@@ -58,7 +60,7 @@ p {
   text-align: var(--para-align);
 }
 
-p+p {
+p + p {
   text-indent: var(--para-indent);
 }
 
@@ -136,18 +138,13 @@ thead {
 .material-icons {
   font-size: var(--icon) !important;
   display: inline-flex;
-  vertical-align: middle !important;
+  vertical-align: text-bottom !important;
+  align-items: center;
 }
 
 @media screen and (max-width: 1081px) {
   .grid {
     display: block;
-  }
-
-  .material-icons {
-    font-size: var(--icon) !important;
-    display: inline-flex;
-    vertical-align: middle !important;
   }
 
   td, th {
