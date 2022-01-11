@@ -8,7 +8,7 @@
   --color-table: var(--black);
 
   --font: "SFMono", monospace;
-  --font-size: 14px;
+  --font-size: 18px;
   --text-align: left;
   --para-align: justify;
   --para-indent: 3em;
@@ -166,19 +166,19 @@ thead {
 
 @media screen and (min-width: 601px) {
   body {
-    font-size: 10px;
+    font-size: 12px;
   }
 }
 
 @media screen and (min-width: 768px) {
   body {
-    font-size: 11px;
+    font-size: 14px;
   }
 }
 
 @media screen and (min-width: 992px) {
   body {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 
