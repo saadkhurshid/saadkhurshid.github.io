@@ -7,8 +7,8 @@
   --color-bg: var(--gray);
   --color-table: var(--black);
 
+  --font-size: 21px;
   --font: "SFMono", monospace;
-  --font-size: 18px;
   --text-align: left;
   --para-align: justify;
   --para-indent: 3em;
