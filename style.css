@@ -1,11 +1,11 @@
 :root {
   --black: rgba(0, 0, 0, 1.0);
   --white: rgba(255, 255, 255, 1.0);
-  --gray: rgba(51, 51, 51, 1.0);
+  --gray: rgba(128, 128, 128, 1.0);
 
-  --color-text: var(--white);
+  --color-text: var(--black);
   --color-bg: var(--gray);
-  --color-table: var(--black);
+  --color-table: var(--white);
 
   --font-size: 21px;
   --font: "SFMono", monospace;
@@ -137,7 +137,7 @@ thead {
   vertical-align: bottom;
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1200px) {
   .grid {
     display: block;
   }
