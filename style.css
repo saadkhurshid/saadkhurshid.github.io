@@ -2,31 +2,31 @@
   --black: rgba(0, 0, 0, 1.0);
   --white: rgba(255, 255, 255, 1.0);
   --gray: rgba(128, 128, 128, 1.0);
-
-  --color-text: var(--gray);
+  --gray-2: rgba(128, 128, 128, 0.5);
   --color-bg: var(--gray);
   --color-table: var(--black);
-
-  --font-size: 24px;
+  --color-text: var(--gray);
+  --color-line: var(--gray-2);
+  --color-link: var(--gray);
+  --font-size: 18px;
   --font: "Helvetica", san-serif;
   --text-align: left;
   --text-case: lowercase;
-  --leading: 1;
+  --leading: var(--font-size);
   --para-align: justify;
   --para-indent: 3em;
-
   --margin-body: 1px;
   --margin-table: 1px;
   --padding: 0.5em;
-  --radius-table: 0.5em;
+  --radius-table: 0.666em;
   --radius-img: 0.25em;
-  --border: 1px solid var(--color-bg);
-
-  --grid: 1em 8fr 1fr 3fr 3fr 3fr;
+  --border: 1px dotted var(--color-line);
+  --grid: 4fr 4fr 1fr 3fr 3fr 3fr;
+  --grid-1: 1em 1fr;
   --grid-12: repeat(12, 1fr);
-  --gutter: 0.25em;
+  --gutter: 0.5em;
   --gutter-sm: 0.25em;
-
+  --transition: 0.2s;
   --icon: 1em;
 }
 
@@ -60,8 +60,17 @@ p {
   text-align: var(--para-align);
 }
 
-p + p {
+p+p {
   text-indent: var(--para-indent);
+}
+
+a:link, a:visited {
+  color: var(--color-link);
+}
+
+a:hover, a:active {
+  color: var(--color-link);
+  text-decoration: underline;
 }
 
 img {
@@ -83,8 +92,19 @@ table {
 }
 
 thead {
-  border-bottom: var(--border);
   color: var(--color-text);
+}
+
+table tr {
+  display: grid;
+  grid-gap: var(--gutter);
+  grid-template-columns: var(--grid-1);
+  padding: var(--padding);
+  border-bottom: var(--border);
+}
+
+table tr:last-of-type {
+  border-bottom: none;
 }
 
 .grid {
@@ -92,12 +112,6 @@ thead {
   grid-gap: var(--gutter);
   grid-template-columns: var(--grid);
   text-align: var(--text-align);
-  padding: var(--padding);
-  border-radius: inherit;
-}
-
-.grid+.grid {
-  border-top: var(--border);
 }
 
 .desc {
@@ -135,6 +149,10 @@ thead {
   grid-column: span 12;
 }
 
+.icon img {
+  border-radius: 0;
+}
+
 .material-icons {
   font-size: var(--icon) !important;
   display: inline-flex;
@@ -142,13 +160,19 @@ thead {
   align-items: center;
 }
 
-@media screen and (max-width: 1081px) {
+@media screen and (max-width: 640px) {
   .grid {
     display: block;
   }
 
-  td, th {
+  .grid div {
     display: inline;
+  }
+
+  .icon {
+    vertical-align: top;
+    width: var(--icon);
+    height: var(--icon);
   }
 
   .head::after {
