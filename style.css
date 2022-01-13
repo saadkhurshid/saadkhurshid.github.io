@@ -179,11 +179,11 @@ table tr:last-of-type {
     line-height: 16px;
   }
 
-  .grid {
+  .grid, .grid-12 {
     display: block;
   }
 
-  .grid div {
+  .grid div, .grid-12 div {
     display: inline;
   }
 
