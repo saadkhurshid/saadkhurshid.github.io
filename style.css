@@ -18,7 +18,7 @@
   --leading: var(--font-size);
   --para-align: justify;
   --para-indent: 3em;
-  --margin-body: 1em;
+  --margin-body: 0.25em;
   --margin-table: var(--margin-body);
   --padding: 1em;
   --radius-table: var(--padding);
