@@ -201,11 +201,11 @@ table tr:hover a {
 }
 
 @media screen and (max-width: 768px) {
-  .grid, .grid-12 {
+  .grid {
     display: block;
   }
 
-  .grid div, .grid-12 div {
+  .grid div {
     display: inline;
   }
 
@@ -219,5 +219,15 @@ table tr:hover a {
 
   .is-hidden-mobile {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .grid-12 {
+    display: block;
+  }
+
+  .grid-12 div+div {
+    margin-top: var(--gutter-sm);
   }
 }
