@@ -28,9 +28,9 @@
   --grid-tr: 1em 1fr;
   --grid-12: repeat(12, 1fr);
   --gutter: var(--padding);
-  --gutter-sm: 0.125em;
+  --gutter-sm: 0.25em;
   --opacity: 0.6;
-  --transition: 0.2s;
+  --transition: 0.125s;
   --icon: 1em;
 }
 
@@ -52,6 +52,7 @@ body {
   text-transform: var(--text-case);
   margin: var(--margin-body);
   letter-spacing: -0.015em;
+  max-width: 1200px;
 }
 
 em {
@@ -112,28 +113,29 @@ table tr {
   grid-template-columns: var(--grid-tr);
   padding: var(--padding);
   border-bottom: var(--border);
+  transition: var(--transition);
 }
 
 table tr:last-of-type {
   border-bottom: none;
 }
 
-table tr:hover {
+#index tr:hover {
   background: var(--color-bg-hover);
   color: var(--color-text-hover);
 }
 
-table tr:first-of-type:hover {
+#index tr:first-of-type:hover {
   border-top-left-radius: var(--radius-table);
   border-top-right-radius: var(--radius-table);
 }
 
-table tr:last-of-type:hover {
+#index tr:last-of-type:hover {
   border-bottom-left-radius: var(--radius-table);
   border-bottom-right-radius: var(--radius-table);
 }
 
-table tr:hover a {
+#index tr:hover a {
   color: var(--color-text-hover);
 }
 
@@ -222,7 +224,7 @@ table tr:hover a {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .grid-12 {
     display: block;
   }
