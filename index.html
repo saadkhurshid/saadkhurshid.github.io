@@ -19,6 +19,13 @@
   <link rel="preload" href="/fonts/SFMono-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/fonts/SFMono-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
 
+<!-- include jQuery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- include Cycle2 -->
+  <script src="js/jquery.cycle2.min.js"></script>
+
+
   <script>
     if (!sessionStorage.getItem("_swa") && document.referrer.indexOf(location.protocol + "//" + location.host) !== 0) {
       fetch("https://counter.dev/track?" + new URLSearchParams({
@@ -444,14 +451,11 @@
           <p>
             The installation shows a concept of an artificially intelligent,
             smart mini-refrigerator. Designed to encourage people to drink and
-            buy more energy drinks.
-          </p>
-          <p>
-            However, due to its advanced, human-like emotional capability,
-            the self-aware electronic appliance has conflicting feelings
-            about its purpose. The machine begins to malfunction, revealing
-            this internal conflict (displayed through the use of lenticular
-            panels).
+            buy more energy drinks. However, due to its advanced, human-like
+            emotional capability, the self-aware electronic appliance has
+            conflicting feelings about its purpose. The machine begins to
+            malfunction, revealing this internal conflict (displayed through
+            the use of lenticular panels).
           </p>
         </div>
       </td>
@@ -463,12 +467,12 @@
         <div class="col-12">
           <img src="img/canvas_cooler/00.png" alt="" />
         </div>
-        <div class="col-6">
+
+        <div class="col-12 cycle-slideshow" data-cycle-speed="250" data-cycle-timeout="1000">
           <img src="img/canvas_cooler/01.png" alt="" />
-        </div>
-        <div class="col-6">
           <img src="img/canvas_cooler/02.png" alt="" />
         </div>
+
       </td>
     </tr>
   </table>
@@ -589,6 +593,10 @@
       <td>
         <div class="col-12">
           <img src="img/grid_girl/ball.png" alt="" />
+          <img src="img/grid_girl/head_spin.gif" alt="" />
+          <img src="img/grid_girl/girls_grid.png" alt="" />
+          <img src="img/grid_girl/girls.png" alt="" />
+          <img src="img/grid_girl/four_girls.png" alt="" />
         </div>
       </td>
     </tr>
