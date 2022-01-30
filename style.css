@@ -165,7 +165,6 @@ table tr:last-of-type {
   display: grid;
   grid-gap: var(--gutter-sm);
   grid-template-columns: var(--grid-12);
-  padding: var(--gutter-sm);
 }
 
 .col-1 {
@@ -200,6 +199,10 @@ table tr:last-of-type {
 
 .icon img {
   border-radius: 0;
+}
+
+.cycle-slideshow img+img {
+  margin-top: 0;
 }
 
 @media screen and (max-width: 768px) {
